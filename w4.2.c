@@ -50,5 +50,5 @@ double myCos(double x, double epsi) {
 }
 
 int main() {
-    printf("PI = %lf", myPi(0.00001));
+    printf("PI = %lf", myPi(0.001));
 }
