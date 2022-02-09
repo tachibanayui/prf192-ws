@@ -41,23 +41,24 @@ double find_principle(double future, double rate, double period) {
 int main() {
     double v, r, p;
     printf("1. Test saving account\n");
-    printf("principal = ");
     scanf("%lf", &v);
-    printf("Annual rate = ");
+    printf("principal = %.0lf\n", v);
     scanf("%lf", &r);
-    printf("No of years = ");
+    printf("Annual rate = %.1lf\n", r);
     scanf("%lf", &p);
-
+    printf("No of years = %.0lf\n", p);
+    
     printf("principal = %.2lf\n", v);
     printf("amount after 2 years = %.2lf\n", find_future(v, r, p));
-
+    printf("\n");    
+    
     printf("2. Investment calculation\n");
-    printf("future = ");
     scanf("%lf", &v);
-    printf("Annual rate = ");
+    printf("future = %.0lf\n", v);
     scanf("%lf", &r);
-    printf("No of years = ");
+    printf("Annual rate = %.1lf\n", r);
     scanf("%lf", &p);
-
-    printf("principal should be = %.2lf", find_principle(v, r, p));
+    printf("No of years = %.0lf\n", p); 
+    
+    printf("principal should be = %.2lf\n", find_principle(v, r, p));
 }
